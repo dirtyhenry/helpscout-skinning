@@ -12,3 +12,8 @@ run:
 
 test:
 	python -m http.server -d Tests 9000
+
+publish: build
+	mkdir -p docs
+	cp -r Sources/stylesheets docs/
+	cp -r Tests/index.html docs/
