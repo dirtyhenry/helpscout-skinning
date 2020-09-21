@@ -11,7 +11,7 @@ run:
 	bundle exec compass watch Sources
 
 test:
-	python -m http.server -d Tests 9000
+	python3 -m http.server -d Tests 9000
 
 publish: build
 	mkdir -p docs
