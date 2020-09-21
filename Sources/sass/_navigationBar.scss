@@ -1,0 +1,28 @@
+#mainNav,
+#docsSearch {
+  background-color: $faq-nav-background;
+}
+
+.navbar {
+  .navbar-inner {
+    background-color: $faq-nav-background;
+  }
+
+  .nav {
+    li {
+      a {
+        color: $faq-nav-color;
+      }
+    }
+    .active {
+      a {
+        color: $faq-nav-color;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+a.brand {
+  filter: invert(100%);
+}

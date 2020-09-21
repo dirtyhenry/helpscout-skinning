@@ -3,14 +3,5 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
-
-body {
-  background-color: red;
-}
-
-p {
-  min-width: 200px;
-  min-height: 300px;
-  background-image: url("https://picsum.photos/200/300");
-}
+@import "_variables";
+@import "_navigationBar";
