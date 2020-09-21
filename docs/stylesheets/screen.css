@@ -2,6 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 /* line 1, ../sass/_navigationBar.scss */
 #mainNav,
 #docsSearch {
@@ -25,4 +26,93 @@
 /* line 26, ../sass/_navigationBar.scss */
 a.brand {
   filter: invert(100%);
+}
+
+/* line 31, ../sass/_navigationBar.scss */
+#searchBar .search-query {
+  border: none;
+  border-radius: 3px;
+}
+/* line 36, ../sass/_navigationBar.scss */
+#searchBar button[type='submit'] {
+  background-color: #5599f6;
+  border: none;
+  text-shadow: none;
+  border-radius: 0 3px 3px 0;
+}
+
+/* line 2, ../sass/_categoriesList.scss */
+.collection-category h2,
+.collection-category .category {
+  margin: 0;
+}
+/* line 7, ../sass/_categoriesList.scss */
+.collection-category h2 {
+  padding: 0;
+}
+
+/* line 12, ../sass/_categoriesList.scss */
+.collection-category {
+  max-width: 744px;
+  margin: 0 auto 24px auto;
+}
+/* line 16, ../sass/_categoriesList.scss */
+.collection-category h2 {
+  display: none;
+}
+/* line 20, ../sass/_categoriesList.scss */
+.collection-category:not(:last-of-type) {
+  border-bottom: 1px solid #e4e5e7;
+  padding-bottom: 0;
+}
+/* line 25, ../sass/_categoriesList.scss */
+.collection-category .category-list {
+  margin: 0;
+}
+/* line 28, ../sass/_categoriesList.scss */
+.collection-category .category-list:not(.two-col) .category {
+  display: block;
+  width: 100%;
+}
+/* line 33, ../sass/_categoriesList.scss */
+.collection-category .category-list.two-col .category {
+  display: inline-block;
+  width: 49%;
+}
+/* line 37, ../sass/_categoriesList.scss */
+.collection-category .category-list.two-col .category:nth-child(odd) {
+  margin-right: 1%;
+}
+/* line 42, ../sass/_categoriesList.scss */
+.collection-category .category-list .category {
+  box-sizing: border-box;
+  margin-bottom: 2em;
+  padding: 2em;
+  border-radius: 3px;
+}
+/* line 48, ../sass/_categoriesList.scss */
+.collection-category .category-list .category h3,
+.collection-category .category-list .category p {
+  text-align: left;
+}
+/* line 53, ../sass/_categoriesList.scss */
+.collection-category .category-list .category .article-count {
+  display: none;
+}
+/* line 57, ../sass/_categoriesList.scss */
+.collection-category .category-list .category h3 {
+  font-size: 1.33em;
+  font-weight: 600;
+  color: #18181b;
+}
+/* line 63, ../sass/_categoriesList.scss */
+.collection-category .category-list .category p {
+  font-size: 1.17em;
+  color: #797e86;
+}
+
+/* line 12, ../sass/screen.scss */
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <path id="memo-bank-logo-a" d="M6,23 L6,18 L1,18 L6,13 L11,13 L11,18 L16,13 L21,13 L21,18 L16,23 L16,18 L11,18 L6,23 Z M11,3 L11,8 L16,3 L21,3 L21,8 L16,13 L16,8 L11,8 L6,13 L6,8 L1,8 L6,3 L11,3 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="48" height="48" fill="#0B5DD0" rx="24"/>
+    <g transform="translate(12 12)">
+      <mask id="memo-bank-logo-b" fill="#fff">
+        <use xlink:href="#memo-bank-logo-a"/>
+      </mask>
+      <use fill="#FFF" xlink:href="#memo-bank-logo-a"/>
+      <g fill="#FFF" mask="url(#memo-bank-logo-b)">
+        <rect width="24" height="24"/>
+      </g>
+    </g>
+  </g>
+</svg>

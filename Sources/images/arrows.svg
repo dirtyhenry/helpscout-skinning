@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <path id="arrows-a" d="M6.64644661,11.6464466 L7.35355339,12.3535534 L3.70689322,15.9994466 L17,16.0000041 L17,17.0000041 L3.70689322,16.9994466 L7.35355339,20.6464466 L6.64644661,21.3535534 L1.79289322,16.5 L6.64644661,11.6464466 Z M17.3535534,2.64644661 L22.2071068,7.5 L17.3535534,12.3535534 L16.6464466,11.6464466 L20.2928932,7.99944661 L7,8 L7,7 L20.2928932,6.99944661 L16.6464466,3.35355339 L17.3535534,2.64644661 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="48" height="48" fill="#5599F6" rx="24"/>
+    <g transform="translate(12 12)">
+      <mask id="arrows-b" fill="#fff">
+        <use xlink:href="#arrows-a"/>
+      </mask>
+      <use fill="#000" fill-rule="nonzero" xlink:href="#arrows-a"/>
+      <g fill="#FFF" mask="url(#arrows-b)">
+        <rect width="24" height="24"/>
+      </g>
+    </g>
+  </g>
+</svg>

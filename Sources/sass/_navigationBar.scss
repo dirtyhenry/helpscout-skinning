@@ -1,22 +1,22 @@
 #mainNav,
 #docsSearch {
-  background-color: $faq-nav-background;
+  background-color: $color-primary-blue;
 }
 
 .navbar {
   .navbar-inner {
-    background-color: $faq-nav-background;
+    background-color: $color-primary-blue;
   }
 
   .nav {
     li {
       a {
-        color: $faq-nav-color;
+        color: $color-white;
       }
     }
     .active {
       a {
-        color: $faq-nav-color;
+        color: $color-white;
         font-weight: bold;
       }
     }
@@ -25,4 +25,18 @@
 
 a.brand {
   filter: invert(100%);
+}
+
+#searchBar {
+  .search-query {
+    border: none;
+    border-radius: $border-radius;
+  }
+
+  button[type='submit'] {
+    background-color: $color-secondary-blue;
+    border: none;
+    text-shadow: none;
+    border-radius: 0 $border-radius $border-radius 0;
+  }
 }
