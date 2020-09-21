@@ -11,4 +11,4 @@ run:
 	bundle exec compass watch Sources
 
 test:
-	open Tests/index.html
+	python -m http.server -d Tests 9000
