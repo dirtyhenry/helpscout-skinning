@@ -1,17 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
-  <defs>
-    <path id="institutional-building-a" d="M22,21 L22,22 L2,22 L2,21 L22,21 Z M3,20 L3,19 L6,19 L6,9 L7,9 L7,19 L11.5,19 L11.5,9 L12.5,9 L12.5,19 L17,19 L17,9 L18,9 L18,19 L21,19 L21,20 L3,20 Z M12,2 L22,6 L22,8 L2,8 L2,6 L12,2 Z M12,3.077 L3,6.676 L3,7 L21,7 L21,6.677 L12,3.077 Z"/>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
   <g fill="none" fill-rule="evenodd">
     <rect width="48" height="48" fill="#0B5DD0" rx="24"/>
-    <g transform="translate(12 12)">
-      <mask id="institutional-building-b" fill="#fff">
-        <use xlink:href="#institutional-building-a"/>
-      </mask>
-      <use fill="#979797" xlink:href="#institutional-building-a"/>
-      <g fill="#FFF" mask="url(#institutional-building-b)">
-        <rect width="24" height="24"/>
-      </g>
-    </g>
+    <path fill="#FFF" d="M34,33 L34,34 L14,34 L14,33 L34,33 Z M15,32 L15,31 L18,31 L18,21 L19,21 L19,31 L23.5,31 L23.5,21 L24.5,21 L24.5,31 L29,31 L29,21 L30,21 L30,31 L33,31 L33,32 L15,32 Z M24,14 L34,18 L34,20 L14,20 L14,18 L24,14 Z M24,15.077 L15,18.676 L15,19 L33,19 L33,18.677 L24,15.077 Z"/>
   </g>
 </svg>

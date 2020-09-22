@@ -1,20 +1,33 @@
-$color-primary-blue: #0d418a;
-$color-secondary-blue: #5599f6;
+$color-blue-dark: #0d418a;
+$color-blue-primary: #0b5dd0;
+$color-blue-secondary: #5599f6;
+$color-blue-background: #f0f6fe;
 $color-white: #ffffff;
 $color-gray-subdued: #797e86;
 $color-gray-border: #e4e5e7;
 $color-gray-text: #18181b;
+$color-gray-hover: #e4e5e7;
 
-$size-xs: 0.67em;
-$size-s: 1.34em;
-$size-m: 2em;
-$size-l: 2.67em;
-$size-xl: 4em;
+$size-xxxs: 0.34rem; //4px
+$size-xxs: 0.67rem; // 8px
+$size-xs: 1rem; // 12px
+$size-s: 1.34rem; // 16px
+$size-m: 2rem; // 24px
+$size-l: 2.67rem; // 32px
+$size-xl: 4rem; // 48px
+$size-xxl: 8rem; // 96px
 
 $border-radius: 3px;
 
-$font-size-body: 1.17em;
-$font-size-subtitle: 1.33em;
+$font-size-body: 1.17rem; // 14px
+$font-size-subtitle: 1.33rem; // 16px
+$font-size-title: 1.89rem; // 22px
+$font-size-large-title: 2.33rem; //28px
+
+$line-height-body: 1.67rem; // 16px
+$line-height-subtitle: 2rem; // 24px
+$line-height-title: 2.67rem; // 32px
+$line-height-large-title: 3.5rem; // 42px
 
 $font-weight-regular: 400;
 $font-weight-semibold: 600;

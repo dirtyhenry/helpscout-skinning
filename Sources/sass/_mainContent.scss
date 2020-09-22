@@ -1,0 +1,70 @@
+#main-content {
+  background: none;
+  .contentWrapper {
+    border: 1px solid $color-gray-border;
+    border-radius: $border-radius;
+    padding: $size-xl;
+  }
+
+  h1 {
+    font-size: $font-size-title;
+    line-height: $line-height-title;
+    font-weight: $font-weight-semibold;
+    color: $color-gray-text;
+    margin-bottom: 0;
+  }
+
+  .descrip {
+    font-size: $font-size-body;
+    color: $color-gray-subdued;
+    line-height: $line-height-body;
+    margin-top: 0;
+  }
+
+  .articleList,
+  .related {
+    margin-top: $size-l;
+
+    li {
+      font-size: $font-size-body;
+      line-height: $line-height-body;
+      margin-bottom: $size-s;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon-article-doc {
+      font-size: 0;
+
+      &::before {
+        content: url('../images/icons/small-note.svg');
+        margin-right: $size-xs;
+      }
+    }
+  }
+
+  #serp {
+    .articleList {
+      a {
+        font-size: $font-size-body;
+        line-height: $line-height-body;
+      }
+
+      p {
+        padding-left: $size-xs;
+        color: $color-gray-text;
+      }
+    }
+
+    .articlesFound,
+    .nada {
+      font-size: $font-size-body;
+      line-height: $line-height-body;
+      margin-top: 0;
+      color: $color-gray-subdued;
+    }
+  }
+}

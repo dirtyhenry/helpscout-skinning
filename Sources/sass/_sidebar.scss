@@ -1,0 +1,64 @@
+#sidebar {
+  form input.search-query {
+    border: 1px solid $color-gray-border;
+    border-radius: $border-radius;
+    box-shadow: none;
+    color: $color-gray-text;
+
+    &::placeholder {
+      color: $color-gray-subdued;
+    }
+
+    &:focus {
+      box-shadow: none;
+      border-color: $color-blue-primary;
+    }
+  }
+
+  button[type='submit'] {
+    padding-right: 0;
+  }
+
+  h3 {
+    font-size: $font-size-subtitle;
+    font-weight: $font-weight-semibold;
+    color: $color-gray-text;
+    text-transform: capitalize;
+    padding-left: $size-xs;
+    line-height: $line-height-subtitle;
+    margin-bottom: $size-s;
+  }
+
+  .nav-list li {
+    padding-left: $size-xs;
+    border-radius: $border-radius;
+  }
+
+  .nav-list .active {
+    background-color: $color-blue-background;
+
+    .icon-arrow {
+      display: none !important;
+    }
+  }
+
+  .nav-list a {
+    font-size: $font-size-body;
+    line-height: $line-height-body;
+    color: $color-gray-text;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .nav-list .active a,
+  .nav-list .active a:hover {
+    color: $color-blue-primary;
+    font-weight: $font-weight-regular;
+  }
+
+  .nav-list li:not(.active):hover {
+    background-color: $color-blue-background;
+    cursor: pointer;
+  }
+}
