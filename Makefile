@@ -5,7 +5,7 @@ lint:
 	bundle exec rubocop
 
 build:
-	bundle exec compass compile Sources
+	bundle exec compass compile Sources --environment production --output-style compact
 
 run: 
 	bundle exec compass watch Sources
