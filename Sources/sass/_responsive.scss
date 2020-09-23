@@ -10,7 +10,8 @@
   #mainNav .container-fluid {
     display: block;
     height: auto;
-    margin-top: $size-s;
+    margin-top: $size-xs;
+    margin-bottom: $size-xs;
 
     &::before,
     &::after {
@@ -19,7 +20,15 @@
 
     .btn-navbar {
       right: 0;
-      margin-top: 10px;
+      margin-top: $size-xs;
+
+      .icon-bar {
+        background: white;
+      }
     }
+  }
+
+  #categoryHead h1 {
+    margin-right: 165px;
   }
 }

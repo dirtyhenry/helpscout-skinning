@@ -12,7 +12,7 @@
     line-height: $line-height-title;
     font-weight: $font-weight-semibold;
     color: $color-gray-text;
-    margin-bottom: 0;
+    margin-bottom: $size-xxs;
   }
 
   .descrip {
@@ -20,12 +20,15 @@
     color: $color-gray-subdued;
     line-height: $line-height-body;
     margin-top: 0;
+    margin-bottom: $size-l;
+  }
+
+  .articleList {
+    margin-top: $size-s;
   }
 
   .articleList,
   .related {
-    margin-top: $size-l;
-
     h3 {
       font-size: $font-size-subtitle;
       line-height: $line-height-subtitle;
@@ -35,15 +38,23 @@
     }
 
     li {
-      margin-bottom: $size-s;
-      margin-top: 0;
+      margin: 0;
+
+      & + li {
+        margin-top: $size-s;
+        margin-bottom: 0;
+      }
     }
 
-    a {
+    li a {
       display: flex;
       align-items: center;
       font-size: $font-size-body;
       line-height: $line-height-body;
+
+      &:hover {
+        color: $color-blue-primary;
+      }
     }
 
     .icon-article-doc {
@@ -61,6 +72,11 @@
       a {
         font-size: $font-size-body;
         line-height: $line-height-body;
+        display: flex;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       p {

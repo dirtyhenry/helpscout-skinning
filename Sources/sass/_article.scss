@@ -35,19 +35,19 @@ article#fullArticle {
   h4 {
     font-size: $font-size-subtitle;
     line-height: $line-height-subtitle;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: $size-m;
+    margin-bottom: $size-xxs;
   }
 
   .callout {
     background-color: $color-blue-background;
     border-left: $size-xxxs solid $color-blue-primary;
     padding: $size-s $size-m $size-s $size-m;
-    margin-top: $size-xl;
+    margin-top: $size-l;
   }
 
   .callout p {
-    margin-bottom: $size-m;
+    margin-bottom: $size-s;
     line-height: $line-height-body;
     margin-top: 0;
   }
@@ -59,5 +59,36 @@ article#fullArticle {
     padding: $size-xxs;
     width: $size-s;
     height: $size-s;
+  }
+
+  dd {
+    padding-top: 2px;
+
+    p {
+      margin-top: $size-xxxs;
+    }
+  }
+}
+
+.articleFoot time.lu {
+  font-family: inherit;
+  font-style: initial;
+  float: none;
+  font-size: $font-size-body;
+  line-height: $line-height-body;
+  color: $color-gray-subdued;
+  width: 100%;
+}
+
+#main-content .contentWrapper.withRelated {
+  border-radius: $border-radius $border-radius 0 0;
+  border-bottom: none;
+
+  & + .related {
+    border-radius: 0 0 $border-radius $border-radius;
+
+    li {
+      padding: 0;
+    }
   }
 }
