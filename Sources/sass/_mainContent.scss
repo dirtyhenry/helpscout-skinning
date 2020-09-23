@@ -59,6 +59,7 @@
 
     .icon-article-doc {
       font-size: 0;
+      flex-shrink: 0;
 
       &::before {
         content: url('../images/icons/small-note.svg');

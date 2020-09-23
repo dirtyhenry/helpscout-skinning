@@ -324,29 +324,30 @@
 #main-content .articleList .icon-article-doc,
 #main-content .related .icon-article-doc {
   font-size: 0;
+  flex-shrink: 0;
 }
-/* line 63, ../sass/_mainContent.scss */
+/* line 64, ../sass/_mainContent.scss */
 #main-content .articleList .icon-article-doc::before,
 #main-content .related .icon-article-doc::before {
   content: url("../images/icons/small-note.svg");
   margin-right: 1rem;
 }
-/* line 72, ../sass/_mainContent.scss */
+/* line 73, ../sass/_mainContent.scss */
 #main-content #serp .articleList a {
   font-size: 1.17rem;
   line-height: 1.67rem;
   display: flex;
 }
-/* line 77, ../sass/_mainContent.scss */
+/* line 78, ../sass/_mainContent.scss */
 #main-content #serp .articleList a:hover {
   text-decoration: underline;
 }
-/* line 82, ../sass/_mainContent.scss */
+/* line 83, ../sass/_mainContent.scss */
 #main-content #serp .articleList p {
   padding-left: 1rem;
   color: #18181b;
 }
-/* line 88, ../sass/_mainContent.scss */
+/* line 89, ../sass/_mainContent.scss */
 #main-content #serp .articlesFound,
 #main-content #serp .nada {
   font-size: 1.17rem;
