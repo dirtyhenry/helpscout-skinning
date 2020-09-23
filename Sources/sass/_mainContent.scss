@@ -1,6 +1,7 @@
 #main-content {
   background: none;
-  .contentWrapper {
+  .contentWrapper,
+  .related {
     border: 1px solid $color-gray-border;
     border-radius: $border-radius;
     padding: $size-xl;
@@ -25,15 +26,24 @@
   .related {
     margin-top: $size-l;
 
+    h3 {
+      font-size: $font-size-subtitle;
+      line-height: $line-height-subtitle;
+      color: $color-gray-text;
+      margin-bottom: $size-xs;
+      text-transform: capitalize;
+    }
+
     li {
-      font-size: $font-size-body;
-      line-height: $line-height-body;
       margin-bottom: $size-s;
+      margin-top: 0;
     }
 
     a {
       display: flex;
       align-items: center;
+      font-size: $font-size-body;
+      line-height: $line-height-body;
     }
 
     .icon-article-doc {
