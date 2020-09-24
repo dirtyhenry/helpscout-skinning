@@ -3,5 +3,25 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "_variables";
-@import "_navigationBar";
+@import '_variables';
+@import '_navigationBar';
+@import '_categoriesList';
+@import '_categoriesIcons';
+@import '_mainContent';
+@import '_sidebar';
+@import '_article';
+@import '_responsive';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-size: 12px;
+}
+
+a {
+  color: $color-blue-primary;
+}

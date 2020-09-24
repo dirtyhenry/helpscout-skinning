@@ -1,28 +1,115 @@
 #mainNav,
 #docsSearch {
-  background-color: $faq-nav-background;
+  background-color: $color-blue-dark;
 }
 
-.navbar {
+#mainNav {
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $size-xxl;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+
   .navbar-inner {
-    background-color: $faq-nav-background;
+    background-color: $color-blue-dark;
   }
 
   .nav {
+    position: static;
     li {
       a {
-        color: $faq-nav-color;
+        color: $color-white;
+        font-size: $font-size-subtitle;
+        padding: $size-xs;
       }
     }
     .active {
       a {
-        color: $faq-nav-color;
+        color: $color-white;
         font-weight: bold;
       }
+
+      .caret {
+        display: none;
+      }
+    }
+  }
+
+  a.brand {
+    width: 172px;
+    height: 30px;
+    background: no-repeat left center url('../images/memo-bank-logo.svg');
+    img {
+      display: none;
     }
   }
 }
 
-a.brand {
-  filter: invert(100%);
+#docsSearch {
+  border-bottom: none;
+
+  h1 {
+    font-size: $font-size-large-title;
+    line-height: $line-height-large-title;
+    margin-bottom: $size-l;
+    font-weight: bold;
+    color: $color-white;
+  }
+}
+
+#searchBar {
+  padding: 0;
+  padding-bottom: $size-xl;
+
+  .search-query {
+    border: none;
+    border-radius: $border-radius;
+    box-shadow: none;
+    font-size: $font-size-subtitle;
+    color: $color-gray-text;
+    padding-left: $size-s;
+
+    &::placeholder {
+      color: $color-gray-subdued;
+    }
+  }
+
+  button[type='submit'] {
+    background-color: transparent;
+    padding-left: $size-s;
+    padding-right: $size-s;
+    border: none;
+    text-shadow: none;
+    border-radius: 0 $border-radius $border-radius 0;
+    top: 0;
+
+    i.icon-search {
+      display: block;
+      content: url('../images/icons/magnifying-glass.svg');
+    }
+
+    span {
+      display: none;
+    }
+  }
+}
+
+#serp-dd {
+  background: $color-white;
+  border: 1px solid $color-gray-border;
+  box-shadow: 0px 24px 32px 0px rgba(0, 0, 0, 0.1);
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  top: 56px;
+
+  .result a {
+    color: $color-gray-text;
+    padding: $size-xs $size-s $size-xs $size-s;
+  }
 }

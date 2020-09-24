@@ -1,0 +1,97 @@
+#main-content {
+  background: none;
+  .contentWrapper,
+  .related {
+    border: 1px solid $color-gray-border;
+    border-radius: $border-radius;
+    padding: $size-xl;
+  }
+
+  h1 {
+    font-size: $font-size-title;
+    line-height: $line-height-title;
+    font-weight: $font-weight-semibold;
+    color: $color-gray-text;
+    margin-bottom: $size-xxs;
+  }
+
+  .descrip {
+    font-size: $font-size-body;
+    color: $color-gray-subdued;
+    line-height: $line-height-body;
+    margin-top: 0;
+    margin-bottom: $size-l;
+  }
+
+  .articleList {
+    margin-top: $size-s;
+  }
+
+  .articleList,
+  .related {
+    h3 {
+      font-size: $font-size-subtitle;
+      line-height: $line-height-subtitle;
+      color: $color-gray-text;
+      margin-bottom: $size-xs;
+      text-transform: capitalize;
+    }
+
+    li {
+      margin: 0;
+
+      & + li {
+        margin-top: $size-s;
+        margin-bottom: 0;
+      }
+    }
+
+    li a {
+      display: flex;
+      align-items: center;
+      font-size: $font-size-body;
+      line-height: $line-height-body;
+
+      &:hover {
+        color: $color-blue-primary;
+      }
+    }
+
+    .icon-article-doc {
+      font-size: 0;
+      flex-shrink: 0;
+
+      &::before {
+        content: url('../images/icons/small-note.svg');
+        margin-right: $size-xs;
+      }
+    }
+  }
+
+  #serp {
+    .articleList {
+      a {
+        font-size: $font-size-body;
+        line-height: $line-height-body;
+        display: flex;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      p {
+        padding-left: $size-xs;
+        color: $color-gray-text;
+      }
+    }
+
+    .articlesFound,
+    .nada {
+      font-size: $font-size-body;
+      line-height: $line-height-body;
+      margin-top: 0;
+      color: $color-gray-subdued;
+    }
+  }
+}
