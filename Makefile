@@ -15,5 +15,6 @@ test:
 
 publish: build
 	mkdir -p docs
+	cp -r Sources/images docs/
 	cp -r Sources/stylesheets docs/
 	cp -r Tests/index.html docs/
